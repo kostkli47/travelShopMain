@@ -104,7 +104,7 @@ export function registerConfirmButton(): void {
       }
       
       
-      export function initTourElemListener(tourWrap:any):void {
+      export function initTourElemListener(tourWrap):void {
         tourWrap.addEventListener('click', (ev) => {
           const targetItem = ev.target;
           const parentItem = targetItem?.parentNode;
