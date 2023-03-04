@@ -2,8 +2,6 @@ import {getTours} from "@rest/tours";
 import './assets/styles/main.scss';
 import {images} from "@services/img/img";
 import {ITours} from "./models/tours/index";
-/* import {getTourTemplate} from "./templates/tours";
-import {openModal} from "@services/modal/modalService"; */
 import {initFooterTitle, initHeaderTitle, initToursDivElements} from "@services/general/general";
 
 export let toursDataArray: ITours[] = [];

@@ -104,10 +104,10 @@ export function registerConfirmButton(): void {
       }
       
       
-      export function initTourElemListener(tourWrap):void {
+      export function initTourElemListener(tourWrap:HTMLElement):void {
         tourWrap.addEventListener('click', (ev) => {
-          const targetItem = ev.target;
-          const parentItem = targetItem?.parentNode;
+          const targetItem = <HTMLElement>ev.target;
+          const parentItem = <HTMLElement>targetItem?.parentNode;
           let realTarget:any;
       
           if (targetItem.hasAttribute('data-tour-item-index')) {
